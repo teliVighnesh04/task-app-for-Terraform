@@ -11,7 +11,7 @@ sudo apt-get install -y gcc default-libmysqlclient-dev pkg-config
 sudo rm -rf /var/lib/apt/lists/*
 
 # install python-pip
-sudo apt install python3-pip
+sudo apt install python3-pip -y
 
 # install app dependencies
 pip install mysqlclient
