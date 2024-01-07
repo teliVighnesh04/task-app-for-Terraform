@@ -1,10 +1,3 @@
-# update system 
-sudo apt-get update
-
-# take clone of project
-git clone https://github.com/teliVighnesh04/task-app-for-Terraform.git
-cd task-app-for-Terraform/MySQL-Setup/ 
-
 # install mysql-server
 sudo apt install mysql-server -y
 
