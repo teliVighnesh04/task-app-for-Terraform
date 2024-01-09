@@ -1,9 +1,13 @@
 # install required dependencies
-sudo apt-get install -y gcc default-libmysqlclient-dev pkg-config
+# DEBIAN_FRONTEND variable to "noninteractive," which suppresses interactive prompts
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -q gcc default-libmysqlclient-dev pkg-config
 sudo rm -rf /var/lib/apt/lists/*
 
+# update packages
+sudo apt-get update
+
 # install python-pip
-sudo apt-get install python3-pip -y
+sudo DEBIAN_FRONTEND=noninteractive apt-get install python3-pip -y
 
 # install app dependencies
 pip install mysqlclient
