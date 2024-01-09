@@ -13,7 +13,4 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install python3-pip -y
 pip install mysqlclient
 pip install --no-cache-dir -r requirements.txt
 
-# run app.py
-python3 app.py
-
 
