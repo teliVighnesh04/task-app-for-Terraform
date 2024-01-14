@@ -1,3 +1,4 @@
+#!/bin/bash
 # install required dependencies
 # DEBIAN_FRONTEND variable to "noninteractive," which suppresses interactive prompts
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -q gcc default-libmysqlclient-dev pkg-config
