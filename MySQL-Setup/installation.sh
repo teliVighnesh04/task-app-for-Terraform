@@ -1,7 +1,17 @@
 #!/bin/bash
-# install mysql-server
-sudo apt install mysql-server -y
 
+#update and upgrade
+sudo apt-get update
+sudo apt-get upgrade -y
+
+# install mysql-server
+sudo apt-get install mysql-server -y
+
+#enable and start MySQL server
+sudo systemctl enable mysql
+sudo systemctl start mysql
+
+wait
 # setup
 sudo mysql -u root < mysql-setup.sql
 
