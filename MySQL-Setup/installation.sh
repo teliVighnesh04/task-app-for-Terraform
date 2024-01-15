@@ -2,7 +2,6 @@
 
 #update and upgrade
 sudo apt-get update
-sudo apt-get upgrade -y
 
 # install mysql-server
 sudo apt-get install mysql-server -y
